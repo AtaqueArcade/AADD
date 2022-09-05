@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="torneum_D_Ibanez_G_Canovas">
+		<class>aadd.persistencia.bean.Torneo</class>
+		<class>aadd.persistencia.bean.Usuario</class>
+		<class>aadd.persistencia.bean.Equipo</class>
+		<class>aadd.persistencia.bean.Direccion</class>
+		<class>aadd.persistencia.bean.Plaza</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password"
+				value="TyCrVw97" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/torneum?serverTimezone=CET" />
+			<property name="eclipselink.ddl-generation"
+				value="create-or-extend-tables" />
+		</properties>
+	</persistence-unit>
+</persistence>
